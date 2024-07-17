@@ -132,10 +132,21 @@
                 განმარტება: ელემენტი form თავისი ატრიბუტით action გამოიყენება შეიქმნას ველი inputi რომელშიც რაღაცის ჩაწერის
                 მერე აction-ზე მითითებულ ლინკზე წავა ჩაწერილი ინფორმაცია, ხოლო ელემენტი inputi დაუხურავი ელემენტია და საშუალე
                 ბას გაძლევს შექმნას ჩასაწერი ველი. ხოლო input-ს მოყვება type0ები, რომელიც ველს ჩაწერის სხვადასხვა კონტექსტს 
-                აძლევს. აქ არის ლინკი type-ის ჩამონათვლის https://www.w3schools.com/html/html_form_input_types.asp
+                აძლევს. აქ არის ლინკი type-ის ჩამონათვლის https://www.w3schools.com/html/html_form_input_types.asp, ასევე 
+                inputs აქვს name attribute , იმისთვის, რომ მნიშვნელობა მიენიჭოს input-ს, ასევე გვაქვს placeholder attribute-იც , 
+                რომელიც ეხმარება მოხმარებელს გაიგოს რა ჩაწეროს ველში, ატრიბუტი required იმისთვისაა , რომ მომხმარებლებმა 
+                buttons ტექსტის ჩაწერის გარეშე ვერ დააჭიროს"
                 -->
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
-                    <input type="number" />
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="wishes"
+                        required
+                    />
+                    <!--განმ: button ელემენტი გამოიყენება იმ ღილაკისთვის, რომლითაც user გააგზავნის ველში ჩაწერილ ტექტს 
+                    -->
+                    <button>submit</button>
                 </form>
             </section>
         </main>
