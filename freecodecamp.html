@@ -144,9 +144,49 @@
                         placeholder="wishes"
                         required
                     />
-                    <!--განმ: button ელემენტი გამოიყენება იმ ღილაკისთვის, რომლითაც user გააგზავნის ველში ჩაწერილ ტექტს 
+                    <!--განმ: button ელემენტი გამოიყენება იმ ღილაკისთვის, რომლითაც user გააგზავნის ველში ჩაწერილ ტექტს ,ამ 
+                    ელემენტსაც აქვს type-ბი, ერთ-ერთია submit, რომელიც გამოიყენება იმისთვის , რომ ველთან არსებულ 
+                    ღილაკის დაჭერისას მხოლოდ ამ ველში ჩაწერილი ტექსტი გაიგზავნოს და არა სხვა ველების.
                     -->
-                    <button>submit</button>
+                    <button type="submit">submit</button>
+                </form>
+                <h3>choose your fav color:</h3>
+                <!--განმარტება: არსებობს type radio სხვადსხვა შესაძლო ვარიანტისთვის, და button-ის type submit-, 
+                იღებს formის ლინკს . -->
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <input type="radio" name="pink" />pink
+                    <input type="radio" name="yellow" /> yellow
+                    <input type="radio" name="purple" /> purple
+                    <button type="submit">submit</button>
+                </form>
+                <!--განმარტება:label ელემენტი ხელმისაწვდომი რო იყოს იუზერისთვის input-ის მნიშვნელობა და id 
+                გამოიყენება javaთი რო ჩავასწოროთ რაღაცები.-->
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <h4>choose you fav celebritie and put best pic of her</h4>
+                    <label
+                        ><input type="radio" name="monica bellucci" />monica
+                        bellucci</label
+                    >
+                    <>
+                    <input
+                        type="file"
+                        id="Irina 1"
+                        placeholder="link"
+                        required
+                    />
+
+                    <label
+                        ><input type="radio" name="scarlet johanson" />scarlet
+                        johanson</label
+                    >
+                    <input
+                        type="file"
+                        id="irina2"
+                        placeholder="link"
+                        required
+                    />
+                    <button type="submit">click</button>
+                    <
                 </form>
             </section>
         </main>
