@@ -160,33 +160,72 @@
                     <button type="submit">submit</button>
                 </form>
                 <!--განმარტება:label ელემენტი ხელმისაწვდომი რო იყოს იუზერისთვის input-ის მნიშვნელობა და id 
-                გამოიყენება javaთი რო ჩავასწოროთ რაღაცები.-->
+                გამოიყენება javascriptთი რო ჩავასწოროთ რაღაცები.ხოლო არჩევის დროს ორივე წერტილი რო არ მოინიშნოს
+                names value ორივეგან ერთნაირი უნდა იყოს, ასევე არსებობს ატრიბუტი value, რომელზეც უნდა 
+                მივუთითოთ იმ ველის სახელები , რათა x-თან სწორად მივიდეს რა აირჩია userma -->
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
-                    <h4>choose you fav celebritie and put best pic of her</h4>
-                    <label
-                        ><input type="radio" name="monica bellucci" />monica
-                        bellucci</label
-                    >
-                    <>
-                    <input
-                        type="file"
-                        id="Irina 1"
-                        placeholder="link"
-                        required
-                    />
+                    <h4>choose you fav celebrity and put best pic of her</h4>
 
-                    <label
-                        ><input type="radio" name="scarlet johanson" />scarlet
-                        johanson</label
-                    >
-                    <input
-                        type="file"
-                        id="irina2"
-                        placeholder="link"
-                        required
-                    />
+                    <!--განმ: fieldset ელემენტი გამოიყენება იმისთვის რო ვერტიკალურად დაალაგოს ჩამონათვალი-->
+                    <fieldset>
+                        <
+                        <label
+                            ><input
+                                value="monica"
+                                type="radio"
+                                name="scarlet and monica"
+                            />monica bellucci</label
+                        >
+
+                        <input type="file" id="Irina 1" required />
+                    </fieldset>
+
+                    <fieldset>
+                        <label
+                            ><input
+                                value="scarlet"
+                                type="radio"
+                                name="scarlet and monica"
+                            />scarlet johanson</label
+                        >
+                        <input type="file" id="irina2" required />
+                    </fieldset>
                     <button type="submit">click</button>
-                    <
+                </form>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <!--განმარტება: ელემენტი legend გამოიყენება იმისთვის, რომ მიგვითითოს ფორმის განმარტება. -->
+                    <fieldset>
+                        <legend>what's your fav color?</legend>
+                        <label>
+                            <input
+                                type="radio"
+                                value="blue"
+                                name="blueredyellow"
+                                id="irina3"
+                            />
+                            blue
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                value="red"
+                                name="blueredyellow"
+                                id="irina4"
+                            />
+                            red
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                value="yellow"
+                                name="blueredyellow"
+                                id="irina5"
+                            />
+                            yellow
+                        </label>
+                    </fieldset>
+                    <input type="text" id="irina6" placeholder="other option" />
+                    <button name="button">click</button>
                 </form>
             </section>
         </main>
